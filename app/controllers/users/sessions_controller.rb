@@ -9,7 +9,7 @@ class Users::SessionsController < Devise::SessionsController
 
   def respond_with(current_user, _opts = {})
     render json: {
-      token: request.env["warden-jwt_auth.token"],
+      token: request.env["warden-jwt_auth.token"]
     }, status: :ok
   end
 
@@ -21,11 +21,11 @@ class Users::SessionsController < Devise::SessionsController
 
     if current_user
       render json: {
-        message: "Logged out successfully.",
+        message: "Logged out successfully."
       }, status: :ok
     else
       render json: {
-        message: "Couldn't find an active session.",
+        message: "Couldn't find an active session."
       }, status: :unauthorized
     end
   end

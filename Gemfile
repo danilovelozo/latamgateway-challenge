@@ -8,12 +8,12 @@ gem "pg", "~> 1.1"
 
 gem "puma", ">= 5.0"
 
-gem "tzinfo-data", platforms: %i[ windows jruby ]
+gem "tzinfo-data", platforms: %i[windows jruby]
 
 gem "bootsnap", require: false
 
 group :development, :test do
-  gem "debug", platforms: %i[ mri windows ]
+  gem "debug", platforms: %i[mri windows]
   gem "pry", "~> 0.14.2"
   gem "rspec-rails", "~> 6.0.0"
   gem "shoulda-matchers", "~> 5.0"

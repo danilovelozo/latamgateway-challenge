@@ -12,7 +12,7 @@ describe Address::FindByZipcodeService, type: :module do
       let(:address) { create :address, user: user }
 
       let(:params) do
-        { zipcode: "18076-000" }
+        {zipcode: "18076-000"}
       end
 
       it { expect(subject).to be_truthy }
@@ -20,7 +20,7 @@ describe Address::FindByZipcodeService, type: :module do
 
     context "with invalid params" do
       let(:params) do
-        { zipcode: "00000-000" }
+        {zipcode: "00000-000"}
       end
 
       it { expect(subject).to be_nil }

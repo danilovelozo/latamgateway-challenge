@@ -16,7 +16,7 @@ describe Api::V1::AddressSerializer, type: :model do
         neighborhood: address.neighborhood,
         city: address.city,
         state: address.state,
-        zipcode: address.zipcode,
+        zipcode: address.zipcode
       )
     end
   end

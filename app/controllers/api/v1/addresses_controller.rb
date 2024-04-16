@@ -14,7 +14,7 @@ module Api
       private
 
       def validate_result(result)
-        return render json: { errors: "Address not found" }, status: :unprocessable_entity if result.nil?
+        return render json: {errors: "Address not found"}, status: :unprocessable_entity if result.nil?
 
         render json: result, status: :ok, serializer: AddressSerializer
       end

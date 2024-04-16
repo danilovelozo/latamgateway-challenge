@@ -16,7 +16,7 @@ class Address
       def fetch_address(zipcode, user)
         @url = "https://viacep.com.br/ws/#{zipcode}/json/"
 
-        @request = HTTParty.get(@url, headers: { "Content-Type" => "application/json" })
+        @request = HTTParty.get(@url, headers: {"Content-Type" => "application/json"})
 
         @result = JSON.parse(@request.body)
 
@@ -32,7 +32,7 @@ class Address
           city: @result["localidade"],
           state: @result["uf"],
           zipcode: format_zipcode(@result["cep"]),
-          user_id: user.id,
+          user_id: user.id
         )
       end
 

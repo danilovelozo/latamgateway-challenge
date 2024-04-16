@@ -5,22 +5,22 @@ module ExceptionHandler
 
   included do
     rescue_from StandardError,
-                with: :render_internal_server_error
+      with: :render_internal_server_error
 
     rescue_from UnprocessableEntityError,
-                with: :render_unprocessable_entity_error
+      with: :render_unprocessable_entity_error
 
     rescue_from ActiveRecord::RecordNotFound,
-                with: :render_record_not_found
+      with: :render_record_not_found
 
     rescue_from ActiveRecord::RecordInvalid,
-                with: :render_record_invalid
+      with: :render_record_invalid
 
     rescue_from ActionController::ParameterMissing,
-                with: :render_parameter_missing
+      with: :render_parameter_missing
 
     rescue_from ActiveModel::ValidationError,
-                with: :render_validation_error
+      with: :render_validation_error
   end
 
   private
@@ -60,7 +60,7 @@ module ExceptionHandler
   end
 
   def render_errors(messages, status, fields = {})
-    render json: { errors: { fields: fields, messages: messages } }, status: status
+    render json: {errors: {fields: fields, messages: messages}}, status: status
   end
 
   def capitalized_messages(errors)

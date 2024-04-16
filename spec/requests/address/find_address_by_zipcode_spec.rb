@@ -5,7 +5,7 @@ require "rails_helper"
 describe "Find Address by Zipcode", type: :request do
   describe "GET /api/v1/address/:zipcode" do
     let!(:user) { create :user }
-    let(:headers) { { "Accept" => "application/json", "Content-Type" => "application/json" } }
+    let(:headers) { {"Accept" => "application/json", "Content-Type" => "application/json"} }
     let(:auth_headers) { Devise::JWT::TestHelpers.auth_headers(headers, user) }
 
     context "when send valid data" do
@@ -26,7 +26,7 @@ describe "Find Address by Zipcode", type: :request do
             "neighborhood" => address.neighborhood,
             "city" => address.city,
             "state" => address.state,
-            "zipcode" => address.zipcode,
+            "zipcode" => address.zipcode
           }
         )
       end
@@ -38,7 +38,7 @@ describe "Find Address by Zipcode", type: :request do
       it "show message error" do
         get "/api/v1/address/#{zipcode}", headers: auth_headers
 
-        formatted_response = JSON.parse(response.body)
+        JSON.parse(response.body)
 
         expect(response.status).to eq 422
       end
