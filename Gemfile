@@ -15,6 +15,10 @@ gem "bootsnap", require: false
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem "pry", "~> 0.14.2"
+  gem "rspec-rails", "~> 6.0.0"
+  gem "shoulda-matchers", "~> 5.0"
+  gem "factory_bot_rails"
+  gem "database_cleaner-active_record"
 end
 
 group :development do
