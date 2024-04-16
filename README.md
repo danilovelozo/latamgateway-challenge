@@ -6,8 +6,7 @@
 
 - Ruby 3.2.2
 - Rails 7.1.3.2
-- PostgreSQL 14
-- Redis
+- PostgreSQL
 
 ### Local Setup
 
@@ -35,10 +34,10 @@ docker-compose up
 ```
 
 ### API Documentation
-- TODO
+- [Documentation](https://apidog.com/apidoc/shared-29455587-b98e-43e1-8564-234f5859008e)
 
 ### Production Endpoint
-- TODO
+- https://latamgateway-challenge.onrender.com
 
 ### Tests
 - Run the following command:
@@ -46,6 +45,3 @@ docker-compose up
 ```
 rspec
 ```
-
-### Code Review Shortcut
-- TODO
