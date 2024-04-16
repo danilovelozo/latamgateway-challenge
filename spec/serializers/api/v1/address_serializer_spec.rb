@@ -16,7 +16,8 @@ describe Api::V1::AddressSerializer, type: :model do
         neighborhood: address.neighborhood,
         city: address.city,
         state: address.state,
-        zipcode: address.zipcode
+        zipcode: address.zipcode,
+        full_address: "Rua Andrelino de Souza, Jardim Maria Antônia Prado, Sorocaba - SP, 18076000"
       )
     end
   end

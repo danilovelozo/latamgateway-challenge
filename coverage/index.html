@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-04-16T19:29:42-03:00">2024-04-16T19:29:42-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-04-16T19:33:21-03:00">2024-04-16T19:33:21-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="yellow">
-  88.59%
+  88.74%
 </span>
 
      </span>
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>149</b> relevant lines,
-    <span class="green"><b>132</b> lines covered</span> and
+    <b>151</b> relevant lines,
+    <span class="green"><b>134</b> lines covered</span> and
     <span class="red"><b>17</b> lines missed. </span>
     (<span class="yellow">
-  88.59%
+  88.74%
 </span>
 )
   </div>
@@ -117,11 +117,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#652a25012de97041eae731fd54a88f7c2a5ab6bf" class="src_link" title="app/serializers/api/v1/address_serializer.rb">app/serializers/api/v1/address_serializer.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.17</td>
             
           </tr>
         
@@ -161,7 +161,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#7280954fcdda12d840f519567e9ec669a76c2c8d" class="src_link" title="spec/requests/address/find_address_by_zipcode_spec.rb">spec/requests/address/find_address_by_zipcode_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">47</td>
+            <td class="cell--number">48</td>
             <td class="cell--number">20</td>
             <td class="cell--number">20</td>
             <td class="cell--number">0</td>
@@ -172,7 +172,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#3665b97e33af86ddb03ef94f67aaa44507bb48db" class="src_link" title="spec/serializers/api/v1/address_serializer_spec.rb">spec/serializers/api/v1/address_serializer_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">23</td>
+            <td class="cell--number">24</td>
             <td class="cell--number">8</td>
             <td class="cell--number">8</td>
             <td class="cell--number">0</td>
@@ -461,7 +461,7 @@
 
             
 
-            <code class="ruby">        return render json: { errors: &quot;Address not found&quot; }, status: :unprocessable_entity if result.nil?</code>
+            <code class="ruby">        return render json: {errors: &quot;Address not found&quot;}, status: :unprocessable_entity if result.nil?</code>
           </li>
         </div>
       
@@ -732,7 +732,7 @@
 
             
 
-            <code class="ruby">                with: :render_internal_server_error</code>
+            <code class="ruby">      with: :render_internal_server_error</code>
           </li>
         </div>
       
@@ -765,7 +765,7 @@
 
             
 
-            <code class="ruby">                with: :render_unprocessable_entity_error</code>
+            <code class="ruby">      with: :render_unprocessable_entity_error</code>
           </li>
         </div>
       
@@ -798,7 +798,7 @@
 
             
 
-            <code class="ruby">                with: :render_record_not_found</code>
+            <code class="ruby">      with: :render_record_not_found</code>
           </li>
         </div>
       
@@ -831,7 +831,7 @@
 
             
 
-            <code class="ruby">                with: :render_record_invalid</code>
+            <code class="ruby">      with: :render_record_invalid</code>
           </li>
         </div>
       
@@ -864,7 +864,7 @@
 
             
 
-            <code class="ruby">                with: :render_parameter_missing</code>
+            <code class="ruby">      with: :render_parameter_missing</code>
           </li>
         </div>
       
@@ -897,7 +897,7 @@
 
             
 
-            <code class="ruby">                with: :render_validation_error</code>
+            <code class="ruby">      with: :render_validation_error</code>
           </li>
         </div>
       
@@ -1337,7 +1337,7 @@
 
             
 
-            <code class="ruby">    render json: { errors: { fields: fields, messages: messages } }, status: status</code>
+            <code class="ruby">    render json: {errors: {fields: fields, messages: messages}}, status: status</code>
           </li>
         </div>
       
@@ -1512,8 +1512,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1586,7 +1586,7 @@
 
             
 
-            <code class="ruby">      attributes :id, :name, :neighborhood, :city, :state, :zipcode</code>
+            <code class="ruby">      attributes :id, :name, :neighborhood, :city, :state, :zipcode, :full_address</code>
           </li>
         </div>
       
@@ -1597,12 +1597,56 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      def full_address</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="9">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">        &quot;#{object.name}, #{object.neighborhood}, #{object.city} - #{object.state}, #{object.zipcode}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
             <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
@@ -1613,7 +1657,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -2033,7 +2077,7 @@
 
             
 
-            <code class="ruby">        @request = HTTParty.get(@url, headers: { &quot;Content-Type&quot; =&gt; &quot;application/json&quot; })</code>
+            <code class="ruby">        @request = HTTParty.get(@url, headers: {&quot;Content-Type&quot; =&gt; &quot;application/json&quot;})</code>
           </li>
         </div>
       
@@ -2209,7 +2253,7 @@
 
             
 
-            <code class="ruby">          user_id: user.id,</code>
+            <code class="ruby">          user_id: user.id</code>
           </li>
         </div>
       
@@ -2931,7 +2975,7 @@
 
             
 
-            <code class="ruby">          }</code>
+            <code class="ruby">            &quot;full_address&quot; =&gt; &quot;Rua Andrelino de Souza, Jardim Maria Antônia Prado, Sorocaba - SP, 18076000&quot;,</code>
           </li>
         </div>
       
@@ -2942,7 +2986,7 @@
 
             
 
-            <code class="ruby">        )</code>
+            <code class="ruby">          }</code>
           </li>
         </div>
       
@@ -2953,7 +2997,7 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">        )</code>
           </li>
         </div>
       
@@ -2964,7 +3008,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -2975,12 +3019,23 @@
 
             
 
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
+          <li class="covered" data-hits="1" data-linenumber="36">
             <span class="hits">1</span>
             
 
@@ -2991,7 +3046,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="36">
+          <li class="covered" data-hits="2" data-linenumber="37">
             <span class="hits">2</span>
             
 
@@ -3002,24 +3057,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="37">
+          <li class="never" data-hits="" data-linenumber="38">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      it &quot;show message error&quot; do</code>
           </li>
         </div>
       
@@ -3030,34 +3074,23 @@
 
             
 
-            <code class="ruby">        get &quot;/api/v1/address/#{zipcode}&quot;, headers: auth_headers</code>
+            <code class="ruby">      it &quot;show message error&quot; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="41">
+          <li class="covered" data-hits="1" data-linenumber="40">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">        formatted_response = JSON.parse(response.body)</code>
+            <code class="ruby">        get &quot;/api/v1/address/#{zipcode}&quot;, headers: auth_headers</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
+          <li class="never" data-hits="" data-linenumber="41">
             
             
 
@@ -3068,7 +3101,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        JSON.parse(response.body)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
             <span class="hits">1</span>
             
 
@@ -3079,7 +3134,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="44">
+          <li class="never" data-hits="" data-linenumber="45">
             
             
 
@@ -3090,7 +3145,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="45">
+          <li class="never" data-hits="" data-linenumber="46">
             
             
 
@@ -3101,7 +3156,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="never" data-hits="" data-linenumber="47">
             
             
 
@@ -3112,7 +3167,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="never" data-hits="" data-linenumber="48">
             
             
 
@@ -3369,7 +3424,7 @@
 
             
 
-            <code class="ruby">      )</code>
+            <code class="ruby">        full_address: &quot;Rua Andrelino de Souza, Jardim Maria Antônia Prado, Sorocaba - SP, 18076000&quot;,</code>
           </li>
         </div>
       
@@ -3380,7 +3435,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      )</code>
           </li>
         </div>
       
@@ -3391,12 +3446,23 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
@@ -3598,7 +3664,7 @@
 
             
 
-            <code class="ruby">        { zipcode: &quot;18076-000&quot; }</code>
+            <code class="ruby">        {zipcode: &quot;18076-000&quot;}</code>
           </li>
         </div>
       
@@ -3686,7 +3752,7 @@
 
             
 
-            <code class="ruby">        { zipcode: &quot;00000-000&quot; }</code>
+            <code class="ruby">        {zipcode: &quot;00000-000&quot;}</code>
           </li>
         </div>
       
@@ -4349,7 +4415,7 @@
 
             
 
-            <code class="ruby">    headers = { &quot;Accept&quot; =&gt; &quot;application/json&quot;, &quot;Content-Type&quot; =&gt; &quot;application/json&quot; }</code>
+            <code class="ruby">    headers = {&quot;Accept&quot; =&gt; &quot;application/json&quot;, &quot;Content-Type&quot; =&gt; &quot;application/json&quot;}</code>
           </li>
         </div>
       
