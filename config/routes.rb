@@ -10,4 +10,10 @@ Rails.application.routes.draw do
                        sessions: "users/sessions",
                        registrations: "users/registrations",
                      }
+
+  namespace :api do
+    namespace :v1 do
+      get "/address/:zipcode", to: "addresses#find_address_by_zipcode"
+    end
+  end
 end

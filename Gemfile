@@ -14,6 +14,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
+  gem "pry", "~> 0.14.2"
 end
 
 group :development do
@@ -24,3 +25,4 @@ gem "devise"
 gem "devise-jwt"
 gem "active_model_serializers", "~> 0.10.0"
 gem "dotenv"
+gem "httparty"

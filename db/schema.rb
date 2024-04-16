@@ -16,10 +16,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_16_183855) do
 
   create_table "addresses", force: :cascade do |t|
     t.string "name", null: false
-    t.string "number", null: false
     t.string "neighborhood"
     t.string "city"
     t.string "state"
+    t.string "zipcode"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
